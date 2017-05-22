@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+    
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+<script src="jQuery/jquery-1.11.2.min.js"></script>
+<script src="jQuery/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="JScript/script.js"></script>
+<script src="JScript/cordova-2.3.0.js"></script>
+</head>
+ 
+<body> 
+
+<div data-role="page" id="page" data-theme="a">
+    <div data-role="header">
+        <h1>Players Database</h1>
+    </div>
+    <!--<div data-role="content">-->
+    <div data-role="main" class="ui-content">	
+        <ul data-role="listview">
+            <li><a href="#page2">Footy 101</a></li>
+            <li><a href="#page3">Page 3</a></li>
+            <li><a href="#page4">Page 4</a></li>
+            <li><a href="#page4">Page 5</a></li>
+        </ul>		
+   </div>
+   <div data-role="footer">
+        <h4>Footer</h4>
+   </div>
+</div>
+    
+<div data-role="page" id="page2" data-theme="a">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>Footy 101</h1>
+    </div>
+    <!--<div data-role="content">-->
+    <div data-role="main" class="ui-content">
+
+        <input type="hidden" id="txtId" />
+
+        <div data-role="fieldcontain">
+            <label for="txtFirst">First Name:</label>
+            <input type="text" name="txtFirst" id="txtFirst" />
+        </div>
+
+        <div data-role="fieldcontain">
+            <label for="txtLast">Last Name:</label>
+            <input type="text" name="txtLast" id="txtLast" />
+        </div>
+
+        <div data-role="fieldcontain">
+            <label for="txtJumper">Jumper:</label>
+            <input type="text" name="txtJumper" id="txtJumper" />
+        </div>
+
+        <p id="results"></p>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" onClick="insertRecord(); return false;">Insert</a></li>
+                <li><a href="#" onClick="updateRecord(); return false;">Update</a></li>
+                <li><a href="#" onClick="deleteAllRecord(); return false;">Delete All</a></li>
+            </ul>
+        </div>
+        		
+    </div>
+    <div data-role="footer"> 
+        <h4>Footer</h4>    
+    </div>
+</div>
+    
+<div data-role="page" id="page3">
+    <div data-role="header" data-add-back-btn="true">
+         <h1>Page 3</h1>
+    </div>
+    <!--<div data-role="content">-->
+    <div data-role="main" class="ui-content">	
+         Content		
+    </div>
+    <div data-role="footer">
+        <h4>Footer</h4>
+  	</div>
+</div>
+    
+<div data-role="page" id="page4">
+    <div data-role="header" data-add-back-btn="true">
+          <h1>Page 4</h1>
+    </div>
+    <!--<div data-role="content">-->
+    <div data-role="main" class="ui-content">	
+         Content		
+    </div>
+    <div data-role="footer">
+        <h4>Footer</h4>
+  	</div>
+</div>
+
+<div data-role="page" id="page5">
+    <div data-role="header" data-add-back-btn="true">
+          <h1>Page 5</h1>
+    </div>
+    <!--<div data-role="content">-->
+    <div data-role="main" class="ui-content"> 
+         Content    
+    </div>
+    <div data-role="footer">
+        <h4>Footer</h4>
+    </div>
+</div>
+
+</body>
+</html>
